@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.1;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header {
+    background-color: #d7e0e2;
+}
+
+.header .container{
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 56px; */
+    justify-content:space-between;
+    align-items: center;
+    padding: 24px 32px;
+}
+
+.header .logo h1 {
+    color: #25850d;
+    line-height: 0.8;
+}
+
+.header .logo h3 {
+    font-size: 14px;
+    font-weight: 600;
+    font-style: italic;
+
+}
+
+.header .nav {
+    /* align-self:flex-start; */
+}
+
+
+.header li {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.header .nav li a {
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+}
+
+.header .nav li a:hover {
+    color: #25850d;
+}
+
+.showcase {
+    text-align: center;
+    padding: 32px;
+}
+
+.showcase h2 {
+    /* line-height: 1.8; */
+    margin-bottom: 32px;
+}
+
+.showcase span {
+    color:#25850d;
+}
+
+.content .container {
+    padding: 24px 24px;
+}
+
+.content .content-wrapper-1,
+.content .content-wrapper-2 {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.content .content-wrapper-1 .content-info {
+    width: 80%;
+    padding-left: 32px;
+
+}
+.content .content-wrapper-2 .content-info {
+    width: 80%;
+    padding-right: 32px;
+
+}
+
+.content .content-wrapper-1 .content-info p,
+.content .content-wrapper-2 .content-info p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.contact .container {
+    padding: 24px;
+}
+
+
+.contact .container .card p {
+    padding: 24px 0;
+    font-size: 18px;
+}
+
+@media(max-width: 680px) {
+    .header .container {
+        /* display: block; */
+        text-align: center;
+        justify-content: center;
+    }
+
+    .header .logo {
+        margin-bottom: 16px;
+    }
+
+    .header .container .nav {
+        /* align-self: center; */
+    }
+
+    .header li:last-child {
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 950px) {
+    
+    .content .content-wrapper-1,
+    .content .content-wrapper-2 {
+        display: block;
+        /* justify-content: space-between; */
+    }
+
+    
+    .content .content-wrapper-1 .content-info {
+        width: 100%;
+        padding-left: 0px;
+
+    }
+    .content .content-wrapper-2 .content-info {
+        width: 100%;
+        padding-right: 0px;
+
+    }
+}
